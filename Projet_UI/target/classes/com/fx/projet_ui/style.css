@@ -1,0 +1,5 @@
+.pane {
+    -fx-border-color: #025205;
+    -fx-border-radius: 50px;
+    --fxbackground-color: #fff;
+}
