@@ -9,13 +9,13 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class LocationController {
+public class EmployeController {
     @FXML
     private Button btn_connexion;
     public void onConnexionButtonClick(){
         Stage con = new Stage();
         try {
-            Parent fxml = FXMLLoader.load(getClass().getResource("Location.fxml"));
+            Parent fxml = FXMLLoader.load(getClass().getResource("Employe.fxml"));
             Scene scene2 = new Scene(fxml);
             con.setScene(scene2);
             con.setTitle("Location");

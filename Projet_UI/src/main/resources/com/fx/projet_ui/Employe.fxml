@@ -13,7 +13,7 @@
    <top>
       <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="label-entete" stylesheets="@image/style.css" BorderPane.alignment="CENTER">
          <children>
-            <Label stylesheets="@image/style.css" text="GESTION DE LOCATION" textFill="#282727">
+            <Label stylesheets="@image/style.css" text="GESTION DE LOCATION" textFill="#fffefe">
                <font>
                   <Font size="36.0" />
                </font>

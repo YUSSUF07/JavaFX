@@ -15,10 +15,10 @@ public class ConnexionController {
     public void onConnexionButtonClick(){
         Stage con = new Stage();
         try {
-            Parent fxml = FXMLLoader.load(getClass().getResource("Connexion.fxml"));
+            Parent fxml = FXMLLoader.load(getClass().getResource("Employe.fxml"));
             Scene scene2 = new Scene(fxml);
             con.setScene(scene2);
-            con.setTitle("Connexion");
+            con.setTitle("Employe ");
             con.show();
         }
         catch (IOException e){
