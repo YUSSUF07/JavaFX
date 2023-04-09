@@ -1,0 +1,10 @@
+.pane{
+    -fx-border-color: grey;
+    -fx-border-radius: 50px;
+    -fx-background-color: white;
+}
+.label-sur-pan{
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-border-radius: 30px;
+}
