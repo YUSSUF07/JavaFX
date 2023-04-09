@@ -15,7 +15,7 @@ public class ConnexionController {
     public void onConnexionButtonClick(){
         Stage con = new Stage();
         try {
-            Parent fxml = FXMLLoader.load(getClass().getResource("Employe.fxml"));
+            Parent fxml = FXMLLoader.load(getClass().getResource("Connexion.fxml"));
             Scene scene2 = new Scene(fxml);
             con.setScene(scene2);
             con.setTitle("Connexion");

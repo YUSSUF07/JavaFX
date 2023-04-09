@@ -1,0 +1,10 @@
+.pane {
+    -fx-border-color: #025205;
+    -fx-border-radius: 50px;
+    --fxbackground-color: #fff;
+}.label-sur-pane {
+    -fx-background-color: #fff;
+    -fx-border-color: #fff;
+    -fx-border-radius: 30px;
+
+ }
