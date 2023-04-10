@@ -8,12 +8,12 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fx.projet_ui.AcceuilController">
+<AnchorPane fx:id="menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fx.projet_ui.AcceuilController">
     <children>
-        <Pane id="menu" fx:id="menu" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1215.0" stylesheets="@image/style.css">
+        <Pane id="menu" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1215.0" stylesheets="@image/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <ImageView fitHeight="769.0" fitWidth="1223.0" layoutX="-4.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" />
-                <ImageView fitHeight="769.0" fitWidth="1236.0" layoutX="-17.0" layoutY="-9.0" opacity="0.76">
+                <ImageView fitHeight="776.0" fitWidth="1227.0" layoutX="-4.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fitHeight="767.0" fitWidth="1234.0" layoutX="-19.0" layoutY="-3.0" opacity="0.76">
                     <image>
                         <Image url="@image/Model-3-Interior-Hero-Desktop-LHD.jpg" />
                     </image>
