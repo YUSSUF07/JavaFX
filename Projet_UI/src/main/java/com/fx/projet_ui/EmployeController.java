@@ -1,5 +1,6 @@
 package com.fx.projet_ui;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,20 +11,28 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class EmployeController {
-    @FXML
-    private Button btn_connexion;
-    public void onConnexionButtonClick(){
-        Stage con = new Stage();
-        try {
-            Parent fxml = FXMLLoader.load(getClass().getResource("Employe.fxml"));
-            Scene scene2 = new Scene(fxml);
-            con.setScene(scene2);
-            con.setTitle("Location");
-            con.show();
-        }
-        catch (IOException e){
-            throw new RuntimeException(e);
-        }
+
+    public void ajouterVehicule(ActionEvent actionEvent) {
     }
 
+    public void modifierEtat(ActionEvent actionEvent) {
+    }
+
+    public void supprimerVehicule(ActionEvent actionEvent) {
+    }
+
+    public void ConsultationPark(ActionEvent actionEvent) {
+    }
+
+    public void AjoutLocation(ActionEvent actionEvent) {
+    }
+
+    public void finLocation(ActionEvent actionEvent) {
+    }
+
+    public void getVehiculeLoue(ActionEvent actionEvent) {
+    }
+
+    public void getVehiculeLoueByClient(ActionEvent actionEvent) {
+    }
 }
