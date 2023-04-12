@@ -23,20 +23,23 @@
                <children>
                   <ImageView fitHeight="55.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@image/img_8.png" />
+                        <Image url="@image/img_9.png" />
                      </image></ImageView>
                   <Separator opacity="0.02" prefHeight="54.0" prefWidth="205.0" />
-                  <Separator prefHeight="51.0" prefWidth="11.0" />
+                  <Separator opacity="0.0" prefHeight="51.0" prefWidth="11.0" />
                   <ChoiceBox prefHeight="55.0" prefWidth="194.0" style="-fx-background-color: #f0f0f0;" value="Tout">
                      <VBox.margin>
                         <Insets left="10.0" right="10.0" top="10.0" />
                      </VBox.margin>
                      <items>
                         <FXCollections fx:factory="observableArrayList">
-                           <String fx:value="Fiat" />
-                           <String fx:value="Honda" />
+                           <String fx:value="Toyota" />
+                           <String fx:value="Lexus" />
                            <String fx:value="Nissan" />
-                           <String fx:value="Mercedes" />
+                           <String fx:value="Ford" />
+                           <String fx:value="Ferari" />
+                           <String fx:value="Lexus RZ 450e" />
+
                         </FXCollections>
                      </items>
                   </ChoiceBox>
@@ -47,39 +50,39 @@
          <left>
             <VBox prefHeight="509.0" prefWidth="172.0" BorderPane.alignment="CENTER">
                <children>
-                  <Separator orientation="VERTICAL" prefHeight="27.0" prefWidth="22.0" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="27.0" prefWidth="22.0" />
                   <Label prefHeight="17.0" prefWidth="78.0" text="Recherche" />
-                  <Separator orientation="VERTICAL" prefHeight="12.0" prefWidth="24.0" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="12.0" prefWidth="24.0" />
                   <Label prefHeight="17.0" prefWidth="115.0" text="Type" />
-                  <Separator orientation="VERTICAL" prefHeight="13.0" prefWidth="2.0" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="13.0" prefWidth="2.0" />
                   <CheckBox mnemonicParsing="false" text="Mini 5" />
-                  <Separator orientation="VERTICAL" prefHeight="13.0" prefWidth="5.0" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="13.0" prefWidth="5.0" />
                   <CheckBox mnemonicParsing="false" text="Standard 87" />
-                  <Separator orientation="VERTICAL" prefHeight="11.0" prefWidth="15.0" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="11.0" prefWidth="15.0" />
                   <CheckBox mnemonicParsing="false" text="Compact 6" />
-                  <Separator orientation="VERTICAL" prefHeight="13.0" prefWidth="5.0" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="13.0" prefWidth="5.0" />
                   <CheckBox mnemonicParsing="false" text="Economy 12" />
-                  <Separator orientation="VERTICAL" prefHeight="13.0" prefWidth="5.0" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="13.0" prefWidth="5.0" />
                   <CheckBox mnemonicParsing="false" text="Van 2" />
-                  <Separator orientation="VERTICAL" prefHeight="14.0" prefWidth="0.0" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="14.0" prefWidth="0.0" />
                   <CheckBox mnemonicParsing="false" text="Pickup 1" />
-                  <Separator orientation="VERTICAL" prefHeight="11.0" prefWidth="3.0" />
-                  <CheckBox mnemonicParsing="false" text="Other 15" />
-                  <Separator prefHeight="36.0" prefWidth="160.0" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="11.0" prefWidth="3.0" />
+                  <CheckBox mnemonicParsing="false" text="Other 6" />
+                  <Separator opacity="0.0" prefHeight="36.0" prefWidth="160.0" />
                   <Label prefHeight="17.0" prefWidth="65.0" text="Capacity" />
-                  <Separator orientation="VERTICAL" prefHeight="7.0" prefWidth="6.0" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="7.0" prefWidth="6.0" />
                   <CheckBox mnemonicParsing="false" text="2-5 Passengers 28" />
-                  <Separator orientation="VERTICAL" prefHeight="10.0" prefWidth="17.0" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="10.0" prefWidth="17.0" />
                   <CheckBox mnemonicParsing="false" text="6 or more Passengers 12" />
-                  <Separator prefWidth="200.0" />
-                  <Separator prefHeight="51.0" prefWidth="3.0" />
+                  <Separator opacity="0.0" prefWidth="200.0" />
+                  <Separator opacity="0.0" prefHeight="51.0" prefWidth="3.0" />
                </children>
             </VBox>
          </left>
          <center>
             <VBox prefHeight="529.0" prefWidth="655.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
                <children>
-                  <Separator orientation="VERTICAL" prefHeight="15.0" prefWidth="620.0" />
+                  <Separator opacity="0.06" orientation="VERTICAL" prefHeight="15.0" prefWidth="620.0" />
                   <HBox prefHeight="252.0" prefWidth="620.0">
                      <children>
                         <VBox prefHeight="177.0" prefWidth="204.0">
@@ -95,10 +98,10 @@
                               <Label prefHeight="17.0" prefWidth="63.0" text="800" />
                               <Separator opacity="0.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="205.0" style="-fx-background-color: #fff;" />
                               <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #fe4020;" text="Loué" textFill="WHITE" />
-                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <Separator opacity="0.0" orientation="VERTICAL" prefHeight="200.0" />
                            </children>
                         </VBox>
-                        <Separator prefHeight="252.0" prefWidth="6.0" />
+                        <Separator opacity="0.0" prefHeight="252.0" prefWidth="6.0" />
                         <VBox prefHeight="251.0" prefWidth="160.0">
                            <children>
                               <ImageView fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
@@ -115,7 +118,7 @@
                            </children>
                         </VBox>
                         <VBox prefHeight="252.0" prefWidth="189.0" />
-                        <VBox layoutX="421.0" layoutY="10.0" prefHeight="252.0" prefWidth="189.0">
+                        <VBox layoutX="421.0" layoutY="10.0" prefHeight="252.0" prefWidth="200.0">
                            <children>
                               <ImageView fitHeight="116.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -149,7 +152,7 @@
                               <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #fe4020;" text="Loué" textFill="WHITE" />
                            </children>
                         </VBox>
-                        <Separator prefHeight="260.0" prefWidth="13.0" />
+                        <Separator opacity="0.0" prefHeight="260.0" prefWidth="13.0" />
                         <VBox prefHeight="260.0" prefWidth="202.0">
                            <children>
                               <ImageView fitHeight="114.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
@@ -165,7 +168,7 @@
                               <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #fe4020;" text="Loué" textFill="WHITE" />
                            </children>
                         </VBox>
-                        <Separator prefHeight="260.0" prefWidth="4.0" />
+                        <Separator opacity="0.0" prefHeight="260.0" prefWidth="4.0" />
                         <VBox prefHeight="260.0" prefWidth="206.0">
                            <children>
                               <ImageView fitHeight="114.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
@@ -187,6 +190,6 @@
             </VBox>
          </center>
       </BorderPane>
-      <ImageView fitHeight="51.0" fitWidth="119.0" layoutX="-75.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="51.0" fitWidth="119.0" layoutX="-75.0" layoutY="65.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
