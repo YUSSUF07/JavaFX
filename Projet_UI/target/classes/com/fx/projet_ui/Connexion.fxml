@@ -24,10 +24,9 @@
                         <Font size="14.0" />
                     </font>
                 </Label>
-                <PasswordField layoutX="50.0" layoutY="215.0" prefHeight="33.0" prefWidth="236.0" />
-                <TextField layoutX="50.0" layoutY="106.0" prefHeight="40.0" prefWidth="230.0" text="abc@uqtr.ca" />
-                <Button fx:id="btn_connexion" layoutX="50.0" layoutY="314.0" mnemonicParsing="false" onAction="#onConnexionButtonClick" prefHeight="40.0" prefWidth="121.0" text="Connexion" />
-                <Button layoutX="222.0" layoutY="314.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" text="Reinitialisation" />
+                <PasswordField fx:id="password" layoutX="50.0" layoutY="215.0" prefHeight="33.0" prefWidth="236.0" />
+                <TextField fx:id="email" layoutX="50.0" layoutY="106.0" prefHeight="40.0" prefWidth="230.0" />
+                <Button fx:id="btn_connexion" layoutX="50.0" layoutY="326.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="121.0" text="Connexion" />
                 <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="364.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" />
                 <ImageView fitHeight="150.0" fitWidth="163.0" layoutX="416.0" layoutY="16.0">
                     <image>
@@ -35,6 +34,7 @@
                     </image>
                 </ImageView>
                 <Label layoutX="50.0" layoutY="257.0" prefHeight="25.0" prefWidth="270.0" text="mot de passe oublie?" />
+            <Label fx:id="message" layoutX="286.0" layoutY="314.0" prefHeight="40.0" prefWidth="282.0" />
             </children>
         </Pane>
     </children>
