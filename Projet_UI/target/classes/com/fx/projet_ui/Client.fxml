@@ -39,7 +39,7 @@
                            <String fx:value="Ford" />
                            <String fx:value="Ferari" />
                            <String fx:value="Lexus RZ 450e" />
-                           
+
                         </FXCollections>
                      </items>
                   </ChoiceBox>

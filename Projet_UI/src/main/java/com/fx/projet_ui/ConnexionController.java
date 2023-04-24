@@ -42,29 +42,6 @@ public class ConnexionController  {
             throw new RuntimeException(e);
         }
     }
-    public void login(ActionEvent event) throws SQLException
-    {
-        Connection conn = dbConnection.connection();
-        PreparedStatement statement = null;
-        ResultSet resultSet = null;
-        String sql = "SELECT code_user, password FROM employe WHERE code_user = ? AND password = ?";
-        try{
-            statement = conn.prepareStatement(sql);
-            statement.setString(1, email.getText().toString());
-            statement.setString(2,password.getText().toString());
-            resultSet = statement.executeQuery();
-            if (resultSet.next()){
-                message.setText("Connecte");
-            }
-            else {
-                message.setText("Non connecte");
-            }
 
-        }
-        catch (Exception e){
-
-        }
-
-    }
 
 }
