@@ -1,56 +1,68 @@
 package com.fx.projet_ui;
 
+import java.sql.*;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-
-
-public class dbConnection {
-
-    public static Connection connection() {
-        try {
-            String url = "jdbc:mysql://localhost/3306/java_fx";
-            String username = "root";
-            String password = "";
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(url, username, password);
-            return con;
-        } catch (ClassNotFoundException | SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-}
-
-
-/*public class dbConnection {
-
-    private static dbConnection instance;
+public class DBConnection {
     private Connection connection;
-    private String url = "jdbc:mysql://localhost:3306/java_fx";
-    private String username = "root";
-    private String password = "";
+    private PreparedStatement preparedStatement;
+    private ResultSet resultSet;
+    private int succes;
 
-    public dbConnection() throws SQLException {
+    String url="jdbc:mysql://loclahost:3306/java_fx";
+    String user = "root";
+    String password="";
+    private Connection getConnection()
+    {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            this.connection = DriverManager.getConnection(url, username, password);
-        } catch (ClassNotFoundException ex) {
-            System.out.println("Database Connection Creation Failed : " + ex.getMessage());
+            connection = DriverManager.getConnection(url,user,password);
         }
-    }
-
-    public Connection getConnection() {
+        catch (Exception e){
+            e.printStackTrace();
+        }
         return connection;
     }
-
-    public static dbConnection getInstance() throws SQLException {
-        if (instance == null) {
-            instance = new dbConnection();
-        } else if (instance.getConnection().isClosed()) {
-            instance = new dbConnection();
+    public void initPrepar(String sql){
+        try {
+            getConnection();
+            preparedStatement=connection.prepareStatement(sql);
         }
-
-        return instance;
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
-}*/
+    public ResultSet executeSelect(){
+        resultSet = null;
+        try{
+            resultSet=preparedStatement.executeQuery();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return resultSet;
+    }
+    public int executeMaj(){
+        try{
+            succes=preparedStatement.executeUpdate();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return succes;
+    }
+    public void closeConnection() {
+        try {
+            if (connection != null) {
+                connection.close();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public PreparedStatement getPreparedStatement()
+    {
+        return preparedStatement;
+    }
+
+}
+

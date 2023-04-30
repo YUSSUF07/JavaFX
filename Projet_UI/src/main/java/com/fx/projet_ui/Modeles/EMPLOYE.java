@@ -2,11 +2,15 @@ package com.fx.projet_ui.Modeles;
 
 public class EMPLOYE {
     private int id;
-    private String nom, prenom, adresse, poste;
+    private String nom, prenom, adresse, poste, code_user, password;
     private int telephone;
+    public EMPLOYE(){
+
+    }
 
 
-    public EMPLOYE(int id, String nom, String prenom, String adresse, String poste, int telephone)
+
+    public EMPLOYE(int id, String nom, String prenom, String adresse, String poste, int telephone, String code_user, String password)
     {
         this.id = id;
         this.nom = nom;
@@ -14,7 +18,8 @@ public class EMPLOYE {
         this.adresse = adresse;
         this.poste = poste;
         this.telephone = telephone;
-
+        this.code_user = code_user;
+        this.password = password;
     }
 
     public int getId() {
@@ -31,6 +36,22 @@ public class EMPLOYE {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    public String getCode_user() {
+        return code_user;
+    }
+
+    public void setCode_user(String code_user) {
+        this.code_user = code_user;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getPrenom() {
