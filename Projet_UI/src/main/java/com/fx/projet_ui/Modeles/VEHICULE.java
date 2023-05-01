@@ -1,10 +1,16 @@
 package com.fx.projet_ui.Modeles;
 
+import java.util.ArrayList;
+
 public class VEHICULE {
     private int id;
     private String type, marque,modele, couleur;
     private int kilometrage,annee;
+    private ArrayList<VEHICULE> vehicules;
 
+    public VEHICULE(){
+
+    }
     public VEHICULE(int id, String type, String marque, String modele, int annee, String couleur, int kilometrage)
     {
         this.id = id;
@@ -15,6 +21,8 @@ public class VEHICULE {
         this.couleur = couleur;
         this.kilometrage = kilometrage;
     }
+
+
 
     public int getAnnee() {
         return annee;
@@ -38,6 +46,14 @@ public class VEHICULE {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public ArrayList<VEHICULE> getVehicules() {
+        return vehicules;
+    }
+
+    public void setVehicules(ArrayList<VEHICULE> vehicules) {
+        this.vehicules = vehicules;
     }
 
     public String getMarque() {

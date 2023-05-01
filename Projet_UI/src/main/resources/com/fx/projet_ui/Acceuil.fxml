@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="1034.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.fx.projet_ui.AcceuilController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="1034.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fx.projet_ui.AcceuilController">
     <children>
         <ImageView fitHeight="632.0" fitWidth="1042.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -17,9 +17,9 @@
         </ImageView>
         <Pane layoutX="-2.0" prefHeight="586.0" prefWidth="1046.0">
             <children>
-                <Label layoutX="375.0" layoutY="129.0" prefHeight="34.0" prefWidth="206.0" style="-fx-background-color: SILVER;" text="BIENVENUE A AUTOTECH">
+                <Label layoutX="399.0" layoutY="128.0" prefHeight="34.0" prefWidth="255.0" text="BIENVENUE A AUTOTECH">
                     <font>
-                        <Font size="18.0" />
+                        <Font name="System Bold" size="18.0" />
                     </font>
                 </Label>
               <Button fx:id="btn_employe" layoutX="804.0" layoutY="370.0" mnemonicParsing="false" onAction="#onConnexionButtonClick" prefHeight="39.0" prefWidth="119.0" text="EMPLOYER">

@@ -2,37 +2,61 @@ package com.fx.projet_ui;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
-
-import java.io.IOException;
+import javafx.scene.control.TableView;
 
 public class EmployeController {
 
-    public void ajouterVehicule(ActionEvent actionEvent) {
+    @FXML
+    private Button btnConsultByClient;
+
+    @FXML
+    private Button btnConsultLocation;
+
+    @FXML
+    private Button btnNewLocation;
+
+    @FXML
+    private Button btnNewLocation1;
+
+    @FXML
+    private Button btnNvAcquisition;
+
+    @FXML
+    private Button btnNvAcquisition1;
+
+    @FXML
+    private Button btnNvAcquisition11;
+
+    @FXML
+    private TableView<?> tvConsult;
+
+    @FXML
+    private TableView<?> tvConsultLocation;
+
+    @FXML
+    void AjoutLocation(ActionEvent event) {
+
     }
 
-    public void modifierEtat(ActionEvent actionEvent) {
+    @FXML
+    void ConsultationPark(ActionEvent event) {
+
     }
 
-    public void supprimerVehicule(ActionEvent actionEvent) {
+    @FXML
+    void ajouterVehicule(ActionEvent event) {
+
     }
 
-    public void ConsultationPark(ActionEvent actionEvent) {
+    @FXML
+    void getVehiculeLoue(ActionEvent event) {
+
     }
 
-    public void AjoutLocation(ActionEvent actionEvent) {
+    @FXML
+    void getVehiculeLoueByClient(ActionEvent event) {
+
     }
 
-    public void finLocation(ActionEvent actionEvent) {
-    }
-
-    public void getVehiculeLoue(ActionEvent actionEvent) {
-    }
-
-    public void getVehiculeLoueByClient(ActionEvent actionEvent) {
-    }
 }
